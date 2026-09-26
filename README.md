@@ -4,11 +4,11 @@
     </a>
 </p>
 
-<h1 align="center">pipeline-template</h1>
+<h1 align="center">Pipeline Template</h1>
 
 Reusable shell-based CI/CD pipeline template for Lupaxa projects.
 
-## What this is
+## What This Is
 
 `src/pipeline.sh` is a single-file, copy-and-configure scanner/linter runner. New
 CICD Toolbox tools copy this script and edit only the configuration block at
@@ -17,7 +17,7 @@ the top (above `# STOP HERE`).
 It is CI-agnostic: the same script runs from GitHub Actions, Bitbucket
 Pipelines, Travis CI, or a local shell.
 
-## Quick start
+## Quick Start
 
 1.   Copy `src/pipeline.sh` into your tool repository.
 2.   Edit the **CONFIGURATION** section:
@@ -30,7 +30,7 @@ Pipelines, Travis CI, or a local shell.
 ./pipeline.sh
 ```
 
-### Runtime environment variables
+### Runtime Environment Variables
 
 | Variable         | Default        | Meaning                                          |
 |------------------|----------------|--------------------------------------------------|
@@ -49,7 +49,7 @@ Example:
 SHOW_ERRORS=true EXCLUDE_FILES='vendor/.*,dist/.*' ./pipeline.sh
 ```
 
-## Smoke tests
+## Smoke Tests
 
 ```bash
 tests/smoke/run-smoke.sh
